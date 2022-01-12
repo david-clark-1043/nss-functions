@@ -12,7 +12,7 @@ const announceClear = () => {
 
 const weatherStation = (humidity) => {
     if(humidity > 95) {
-        return broadcast(() => {announceRain()});
+        return broadcast(announceRain);
     } else {
         return broadcast(() => {announceClear()});
     }
