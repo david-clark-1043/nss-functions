@@ -28,9 +28,19 @@ const square = (firstNumber) => {
 }
 
 let legs = 60;
+let legCountFour = 4;
+let legCountTwo = 2;
+let fourLegsPercent = .25;
+let twoLegsPercent = .75;
 
+let baseFourLegs = multiply(legCountFour, fourLegsPercent);
+let baseTwoLegs = multiply(legCountTwo, twoLegsPercent);
 
-let legsnum = add(multiply(4, .25), multiply(2, .75));
-console.log(legsnum);
-let farmAnimals = divide(legs, legsnum);
-console.log(farmAnimals);
+let averageLegCount = add(baseFourLegs, baseTwoLegs);
+
+let farmAnimals = divide(legs, averageLegCount);
+console.log("total legs:", legs);
+console.log("Four leg base unit:", baseFourLegs);
+console.log("Two leg base unit:", baseTwoLegs);
+console.log("Average Leg Count:", averageLegCount);
+console.log("Number of Farm Animals:", farmAnimals);
