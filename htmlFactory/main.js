@@ -2,12 +2,13 @@ const computer = {
 	id: 1,
 	manufacturer: "Apple",
 	make: "Macbook",
-	model: "Pro",
-	specs: {
+    specs: {
 		memory: 32,
 		hardDrive: "500 GB",
 		processor: 2.4
-	}
+	},
+	model: "Pro"
+
 }
 
 function capitalize(word) {
